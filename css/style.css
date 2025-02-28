@@ -345,14 +345,26 @@ img {
   color: #2e2f42;
   margin-bottom: 16px;
 
+ 
 }
 
 .input-text-chap {
   margin-bottom: 8px;
-
 }
-
-
+.input-put input:focus {
+  border-color: #4D5AE5;
+}
+.input-put input:focus + svg{
+  fill: #4d5ae5;
+}
+.input-text{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color:#8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
 .text-spane {
   line-height: 1.33;
   text-decoration: underline;
@@ -385,7 +397,7 @@ img {
 .blok-text:hover,
 .blok-text:focus {
   background-color: #404bbf;
-  ;
+
 }
 
 .blok-inputet {
@@ -406,14 +418,31 @@ img {
 }
 
 .blok-inputet:focus {
-  border: 1px solid #4d5ae5;
+  border-color: 1 solid #4d5ae5;
 }
 
 .textarea {
   margin-bottom: 16px;
 
 }
-
+.blok-inputet-podfooter{
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blok-inputet-podfooter:focus{
+  border-color: #4D5AE5;
+}
 .textarea-checkbox {
   margin-bottom: 24px;
 }
@@ -440,7 +469,7 @@ img {
 }
 
 
-.input-privacy:checked+label>span {
+.input-privacy:checked + label > span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -501,18 +530,9 @@ img {
   color: #2a2a2a;
 }
 
-.paragraf-cap {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: 1px solid #2e2f42;
-  margin-bottom: 16px;
 
-}
 
-.blok-input {
+.blok-input-footer {
   border: 1px solid #ffffff;
   border-radius: 4px;
   font-family: inherit;
@@ -527,6 +547,16 @@ img {
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+}
+.blok-input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blok-input::placeholder {
@@ -566,14 +596,7 @@ img {
 
 }
 
-.icons-svg input:focus,
-.icons-svg input:hover {
-  border: 1px solid #4d5ae5;
-}
 
-.icons-svg input:focus+svg {
-  fill: #4d5ae5;
-}
 
 .backdrop {
   position: fixed;
@@ -582,11 +605,11 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  z-index: 99999;
+  
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: hidden;
   pointer-events: auto;
@@ -594,7 +617,6 @@ img {
 
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
-
 }
 
 .text {
