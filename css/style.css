@@ -351,12 +351,7 @@ img {
 .input-text-chap {
   margin-bottom: 8px;
 }
-.input-put input:focus {
-  border-color: #4D5AE5;
-}
-.input-put input:focus + svg{
-  fill: #4d5ae5;
-}
+
 .input-text{
   font-size: 12px;
   line-height: 1.17;
@@ -469,17 +464,23 @@ img {
 }
 
 
-.input-privacy:checked + label > span {
-  background-color: #404bbf;
+
+
+.input-privacy:checked+label>span {
+  background-color: #404BBF;
   border: none;
-  fill: #f4f4fd;
+  fill: #F4F4FD;
 }
 
 .input-put {
   position: relative;
- 
 }
-
+.input-put input:focus{
+  border: 1px solid #4D5AE5;
+}
+.input-put input:focus + svg{
+  fill: #4D5AE5;
+}
 .modal {
   position: absolute;
   top: 50%;
