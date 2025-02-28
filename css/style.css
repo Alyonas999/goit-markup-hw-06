@@ -527,7 +527,6 @@ img {
 
 .close-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #2a2a2a;
 }
 
 
@@ -615,9 +614,6 @@ img {
   pointer-events: auto;
 }
 
-.backdrop:not(.is-open) .modal {
-  transform: translate(-50%, -50%) scale(1.5);
-}
 
 .text {
   font-weight: 700;
