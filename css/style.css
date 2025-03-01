@@ -466,7 +466,7 @@ img {
 
 
 
-.input-privacy:checked+label>span {
+.input-privacy:checked + label > span {
   background-color: #404BBF;
   border: none;
   fill: #F4F4FD;
@@ -478,7 +478,7 @@ img {
 .input-put input:focus{
   border: 1px solid #4D5AE5;
 }
-.input-put input:focus + svg{
+.input-put input:focus + svg {
   fill: #4D5AE5;
 }
 .modal {
@@ -616,7 +616,7 @@ img {
 
 .backdrop.is-open {
   opacity: 1;
-  visibility: hidden;
+  visibility: visible;
   pointer-events: auto;
 }
 
