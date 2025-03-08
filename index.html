@@ -55,7 +55,7 @@
           </ul>
         </address>
 
-        <button class="burder-btn" data-menu-open type="button">
+        <button class="burder-btn" data-menu-open  type="button">
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -142,7 +142,7 @@
       <section class="text-section ">
         <div class="container main-container">
           <h1 class="title-text">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-business">Order Service</button>
+          <button data-modal-open type="button" class="button-business">Order Service</button>
         </div>
       </section>
 
@@ -720,9 +720,9 @@
       </div>
     </footer>
 
-    <div class="backdrop hidden">
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-closjdj1"></use>
           </svg>
@@ -797,12 +797,12 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
+               <span>
               I accept the terms and conditions of the<a
                 href=""
-                class="text-spane"
-              >
-                Privacy Policy</a
-              >
+                class="text-spane">
+                Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -810,7 +810,7 @@
         </form>
       </div>
     </div>
-
+<script src="./js-old/java-old.js"></script>
     <script src="./js/java.js"></script>
   </body>
 </html>
