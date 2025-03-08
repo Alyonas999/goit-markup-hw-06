@@ -58,7 +58,7 @@ footer {
 
 
 
-.test {
+.test-class {
   max-width: 1158px;
   padding: 0;
   margin: 0 auto;
@@ -503,7 +503,7 @@ footer {
 }
 
 
-.text {
+.title-text {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
