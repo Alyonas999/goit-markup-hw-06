@@ -451,6 +451,12 @@ height: 40px;
         gap: 72px;
 }
 
+.test-nav{
+    display: flex;
+        flex-wrap: wrap;
+    gap: 72px;
+}
+
 .chapter {
     font-weight: 700;
         font-size: 36px;
@@ -467,6 +473,7 @@ height: 40px;
     letter-spacing: 0.02em;
     color: black;
 }
+
 
 .container-icon{
     display: none;
@@ -631,6 +638,7 @@ border-radius: 0 0 4px 4px;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+
 }
 .chapter-portfolio-text{
     font-weight: 500;
@@ -692,13 +700,14 @@ border-radius: 0 0 4px 4px;
 text-align: left;
    }
    .chapter-portfolio{
-            column-gap: 24px;
-                row-gap: 72px;
+             
    }
 
 }
 /* decktop */
 @media screen and (min-width: 1158px) {
-
+.chapter-portfolio{
+    
+}
 
 }
