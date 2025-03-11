@@ -279,13 +279,16 @@ gap: 40px;
 color: #2e2f42;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-list:hover,
-.mobile-list:focus{
-    color:#404bbf
+.mobile-lists {
+    gap: 40px;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .contact{
     display: block;
+    font-style: normal;
 }
 
 .mobile-ul{
@@ -296,14 +299,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-contacts{
-color: #2e2f42;
+    color: #4d5ae5;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mobile-contacts:hover,
-.mobile-contacts:focus {
-    color: #4d5ae5;
+.mobile-contact {
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 .mobile-menu-close{
@@ -436,6 +439,7 @@ height: 40px;
 @media screen and (min-width: 1158px) {
 .text-section{
     padding: 188px 0;
+    width: 100%;
 }
 .title-text {
     margin: 0 auto 48px;
@@ -459,22 +463,22 @@ height: 40px;
 }
 
 .chapter {
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11111;
-        text-align: center;
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+text-align: center;
     color: #2e2f42;
     margin: 16px auto;
 }
 
 .paragraph {
-    font-weight: 500;
+font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: black;
 }
-
 
 .container-icon{
     display: none;
@@ -496,6 +500,10 @@ height: 40px;
 
 .chapter {
    text-align: left;
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
 }
 }
 
@@ -532,6 +540,7 @@ height: 40px;
         .paragraph{
             font-weight: 400;
                 color: #434455;
+                font-size: 16px;
         }
 .command-link {
     width: calc((100% - 72px) / 4);
@@ -610,8 +619,8 @@ border-radius: 0 0 4px 4px;
 
 @media screen and (min-width: 768px) {
 .team-list{
-    row-gap: 24px;
-    column-gap: 64px;
+    row-gap: 64px;
+    column-gap: 24px;
 }
 }
 
@@ -624,6 +633,9 @@ border-radius: 0 0 4px 4px;
 
 
 /* Portfolio */
+.portfolio-conta{
+    padding: 96px 0 96px 0;
+}
 .group-name-port{
     margin-bottom: 72px;
     font-weight: 700;
@@ -642,10 +654,11 @@ border-radius: 0 0 4px 4px;
 
 }
 .chapter-portfolio-text{
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--navy-blue);
         color: #2E2F42;
         gap: 8px;
 }
@@ -692,6 +705,9 @@ border-radius: 0 0 4px 4px;
 }
 
 @media screen and (min-width:768px ) {
+    .portfolio-conta {
+            padding: 96px 96px;
+        }
     .porfoloi-tekst{
         display: none;
     }
@@ -714,6 +730,10 @@ text-align: left;
 }
 /* decktop */
 @media screen and (min-width: 1158px) {
+    .portfolio-conta {
+            padding: 120px 120px;
+        }
+    
 .porfoloi-tekst{
 display: flex;
 }
