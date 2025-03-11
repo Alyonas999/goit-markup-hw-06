@@ -718,9 +718,7 @@ color: var(--navy-blue);
 }
 
 @media screen and (min-width:768px ) {
-    .portfolio-conta {
-            padding: 96px 96px;
-        }
+   
     .porfoloi-tekst{
         display: none;
     }
@@ -749,6 +747,9 @@ text-align: left;
     
 .porfoloi-tekst{
 display: flex;
+}
+.portfolio {
+    padding: 120px 0;
 }
  .chapter-portfolio {
      row-gap: 48px;
