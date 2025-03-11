@@ -426,6 +426,10 @@ height: 40px;
 @media screen and (min-width: 768px){
     .text-section{
         padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            image-set(url(../images/background/office-tab.jpg) 1x,
+                url(../images/background/office-tab@2x.jpg) 2x);
     }
         .title-text {
             max-width: 496px;
@@ -440,6 +444,10 @@ height: 40px;
 .text-section{
     padding: 188px 0;
     width: 100%;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            image-set(url(../images/background/people-office.jpg) 1x,
+                url(../images/background/people-office@2x.jpg) 2x);
 }
 .title-text {
     margin: 0 auto 48px;
